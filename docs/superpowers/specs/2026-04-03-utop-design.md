@@ -50,10 +50,15 @@ apps/utop  →  go/uths
 ### Constants
 
 ```go
+import "math"
+
+var (
+    Phi = math.Phi              // golden ratio (1.618...)
+    Tau = 2 * math.Pi           // full circle constant (6.283...)
+)
+
 const (
-    Phi       = 1.6180339887498948482  // golden ratio
-    Tau       = 6.2831853071795864769  // 2*pi
-    PlanckSec = 5.391e-44             // Planck time in seconds
+    PlanckSec = 5.391e-44      // Planck time in seconds
 
     // Age of universe in seconds (~13.8 billion years)
     // Used as baseline cosmic time offset added to Unix time
